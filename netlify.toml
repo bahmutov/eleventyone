@@ -3,6 +3,13 @@
   publish = "dist"
   functions = "src/functions"
 
+[build.environment]
+  # cache Cypress binary in local "node_modules" folder
+  # so Netlify caches it
+  CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
+  # set TERM variable for terminal output
+  TERM = "xterm"
+
 [dev]
   command = "npm run start"
 
