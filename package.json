@@ -35,6 +35,8 @@
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
-    "cross-env": "5.2.0"
+    "cross-env": "5.2.0",
+    "cypress": "6.4.0",
+    "netlify-plugin-cypress": "1.8.1"
   }
 }
