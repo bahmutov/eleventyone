@@ -2,13 +2,28 @@
   command = "npm run build"
   publish = "dist"
   functions = "src/functions"
-  NODE_ENV = "10.15.3"
+
+[build.environment]
+  # cache Cypress binary in local "node_modules" folder
+  # so Netlify caches it
+  CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
+  # set TERM variable for terminal output
+  TERM = "xterm"
 
 [dev]
   command = "npm run start"
-
 
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+# run Cypress E2E tests
+[[plugins]]
+package = "netlify-plugin-cypress"
+  [plugins.inputs]
+    # skip the default tests before the deploy
+    skip = true
+  [plugins.inputs.onSuccess]
+    # run tests after the deploy
+    enable = true
