@@ -8,7 +8,8 @@
     "start": "npm run dev",
     "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=prod eleventy",
-    "seed": "cross-env ELEVENTY_ENV=seed eleventy"
+    "seed": "cross-env ELEVENTY_ENV=seed eleventy",
+    "dev:netlify": "netlify dev"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "cross-env": "5.2.0",
     "cypress": "6.4.0",
+    "netlify-cli": "3.5.0",
     "netlify-plugin-cypress": "1.8.1"
   }
 }
