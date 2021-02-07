@@ -2,5 +2,6 @@
   "baseUrl": "http://localhost:8888",
   "fixturesFolder": false,
   "supportFile": false,
-  "pluginsFile": false
+  "pluginsFile": false,
+  "projectId": "96uuiz"
 }
