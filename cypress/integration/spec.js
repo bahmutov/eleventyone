@@ -3,7 +3,7 @@
 describe('Demo site', () => {
   it('loads', () => {
     cy.visit('/')
-    cy.contains('h1', 'EleventyOne').should('be.visible')
+    cy.contains('h1', 'Netlify Cypress Tests').should('be.visible')
   })
 
   it('delivers jokes', () => {
