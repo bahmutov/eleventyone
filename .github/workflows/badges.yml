@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Update version badges 🏷
         run: npx -p dependency-version-badge update-badge cypress netlify-plugin-cypress
@@ -32,3 +34,7 @@ jobs:
           commit_message: Updated badges
           branch: master
           file_pattern: README.md
+          # because the master is a protected branch
+          # force push and use personal access token
+          # https://github.com/stefanzweifel/git-auto-commit-action#push-to-protected-branches
+          push_options: --force
