@@ -1,7 +1,7 @@
 name: e2e
 # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
 # https://docs.netlify.com/site-deploys/notifications/
-on: [deployment, deployment_status]
+on: [repository_dispatch, deployment, deployment_status]
 jobs:
   show-event:
     runs-on: ubuntu-20.04
