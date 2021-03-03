@@ -21,10 +21,7 @@
 # run Cypress E2E tests
 [[plugins]]
 package = "netlify-plugin-cypress"
+  # run Cypress tests after deploy and record test results
+  # to Cypress Dashboard
   [plugins.inputs]
-    # skip the default tests before the deploy
-    skip = true
-  [plugins.inputs.onSuccess]
-    # run tests after the deploy
-    enable = true
     record = true
