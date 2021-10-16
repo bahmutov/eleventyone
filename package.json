@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "cross-env": "5.2.0",
-    "cypress": "8.5.0",
+    "cypress": "8.6.0",
     "netlify-cli": "3.5.0",
     "netlify-plugin-cypress": "2.2.0"
   }
