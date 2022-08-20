@@ -16,7 +16,7 @@
     "url": "https://github.com/philhawksworth/eleventyone"
   },
   "dependencies": {
-    "@11ty/eleventy": "1.0.1",
+    "@11ty/eleventy": "1.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "4.1.0",
     "autoprefixer": "^9.6.0",
     "axios": "^0.21.1",
